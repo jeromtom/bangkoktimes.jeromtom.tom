@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<pagescount>
+	<html_total>266</html_total>
+	<html_done>266</html_done>
+	<images>481</images>
+	<script>23</script>
+	<css>10</css>
+	<pdf/>
+	<documents/>
+	<excel/>
+	<powerpoint/>
+	<flash>1</flash>
+	<audios/>
+	<videos/>
+	<xml/>
+	<json/>
+	<txt/>
+	<autocad/>
+	<fonts/>
+	<scraping_reload>10</scraping_reload>
+	<is_pretty_url>true</is_pretty_url>
+	<is_ebn>false</is_ebn>
+	<email>webdev.jerom@gmail.com</email>
+	<theme_name>jdwas76uxpm8zp29jfjx9160525</theme_name>
+	<server_url_front_page>https://www.waybackmachinedownloader.com/scraping/files/live/mediseekers.com_webdev.jerom_gmail.com_qrj7bb3hga/</server_url_front_page>
+	<no_www_url>mediseekers.com</no_www_url>
+	<hosted_domain/>
+	<original_archive_url>https://web.archive.org/web/20120821171709/http://www.mediseekers.com/index</original_archive_url>
+	<final_archive_url>https://web.archive.org/web/20120821171709/http://www.mediseekers.com/index</final_archive_url>
+	<front_page_code_date>20120821171709</front_page_code_date>
+	<total_urls_from_api/>
+	<max_reached_live>false</max_reached_live>
+	<scrape_other_captures>search_ended</scrape_other_captures>
+	<total_size>16496</total_size>
+</pagescount>

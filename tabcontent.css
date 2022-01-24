@@ -1,0 +1,195 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+#glowingtabs{
+	padding-bottom: 15px;
+float:left;
+width:100%;
+font: bold 11px arial,tahoma,verdana; 
+color: #009fd3;
+line-height:normal;
+
+}
+
+#glowingtabs ul{
+list-style-type: none;
+margin:0;
+margin-left: 5px; /*Left offset of entire tab menu relative to page*/
+padding:0;
+}
+
+#glowingtabs li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+#glowingtabs a{
+float:left;
+background:url(../images/glowtab-left.gif) no-repeat left top;
+margin:0;
+margin-right: 5px; /*spacing between each tab*/
+padding:0 0 0 9px;
+text-decoration:none;
+}
+
+#glowingtabs ul{
+list-style-type: none;
+margin:0;
+margin-left: 0px; /*Left offset of entire tab menu relative to page*/
+padding:0;
+}
+
+#glowingtabs li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+#glowingtabs a{
+float:left;
+background:url(../images/glowtab-left.gif) no-repeat left top;
+margin:0;
+margin-right: 2px; /*spacing between each tab*/
+padding:0 0 0 9px;
+text-decoration:none;
+}
+
+#glowingtabs a span{
+float:left;
+display:block;
+background:url(../images/glowtab.gif) no-repeat right top;
+padding: 6px 10px 6px 3px;
+font-weight:bold;
+color:##009fd3;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#glowingtabs a span {float:none;}
+/* End IE5-Mac hack */
+
+#glowingtabs a:hover span {
+color: #009fd3;
+}
+
+#glowingtabs .selected a{ /*Selected Tab style*/
+background-position:0 -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+#glowingtabs .selected a span{ /*Selected Tab style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+color: #009fd3;
+}
+
+#glowingtabs a:hover{ /*onMouseover style*/
+background-position:0% -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+#glowingtabs a:hover span{ /*onMouseover style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+
+
+#glowingtabs2{
+float:left;
+width:100%;
+font: bold 11px arial,tahoma,verdana; 
+color: #1c4d99;
+line-height:normal;
+
+}
+
+#glowingtabs2 ul{
+list-style-type: none;
+margin:0;
+margin-left: 5px; /*Left offset of entire tab menu relative to page*/
+padding:0;
+}
+
+#glowingtabs2 li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+#glowingtabs2 a{
+float:left;
+background:url(../images/glowtab-left2.gif) no-repeat left top;
+margin:0;
+margin-right: 5px; /*spacing between each tab*/
+padding:0 0 0 9px;
+text-decoration:none;
+}
+
+#glowingtabs2 ul{
+list-style-type: none;
+margin:0;
+margin-left: 0px; /*Left offset of entire tab menu relative to page*/
+padding:0;
+}
+
+#glowingtabs2 li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+#glowingtabs2 a{
+float:left;
+background:url(../images/glowtab-left2.gif) no-repeat left top;
+margin:0;
+margin-right: 2px; /*spacing between each tab*/
+padding:0 0 0 9px;
+text-decoration:none;
+}
+
+#glowingtabs2 a span{
+float:left;
+display:block;
+background:url(../images/glowtab2.gif) no-repeat right top;
+padding: 6px 10px 6px 3px;
+font-weight:bold;
+color:##1c4d99;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#glowingtabs2 a span {float:none;}
+/* End IE5-Mac hack */
+
+#glowingtabs2 a:hover span {
+color: #1c4d99;
+}
+
+#glowingtabs2 .selected a{ /*Selected Tab style*/
+background-position:0 -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+#glowingtabs2 .selected a span{ /*Selected Tab style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+color: #1c4d99;
+}
+
+#glowingtabs2 a:hover{ /*onMouseover style*/
+background-position:0% -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+#glowingtabs2 a:hover span{ /*onMouseover style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+
+
+.border
+{
+border-left:1px solid #7e9fff ;
+border-right:1px solid #7e9fff;
+border-bottom:1px solid #7e9fff;
+border-top:0px solid #7e9fff;
+
+margin-bottom: 1em;
+padding: 10px;
+}
+
+.tabcontent{
+display:none;
+}

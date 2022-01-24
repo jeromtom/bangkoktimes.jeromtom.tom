@@ -1,0 +1,421 @@
+# invoke rewrite engine
+RewriteEngine On
+RewriteBase /
+
+Options -Indexes
+<IfModule mod_negotiation.c>
+	Options -MultiViews
+</IfModule>
+
+# Redirect to www
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Add a trailing slash (/) to a URL
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.[A-Za-z0-9]*$
+RewriteRule .*[^/]$ %{REQUEST_URI}/ [L,R=301]
+
+# Create pretty URLs
+RewriteRule ^([^/]+)/$ $1.html [S=9]
+RewriteRule ^([^/]+)/([^/]+)/$ $1/$2.html [S=8]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3.html [S=7]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4.html [S=6]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4/$5.html [S=5]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4/$5/$6.html [S=4]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4/$5/$6/$7.html [S=3]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4/$5/$6/$7/$8.html [S=2]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4/$5/$6/$7/$8/$9.html [S=1]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/$ $1/$2/$3/$4/$5/$6/$7/$8/$9/$10.html
+
+RewriteRule ^advanced\-search.html$ / [L,R=301]
+# Specific redirections
+RewriteRule ^index.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^action\=update_product$
+RewriteRule ^shopping_cart\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=22$
+RewriteRule ^shopping\.php$ shopping_cPath_22/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=17$
+RewriteRule ^shopping\.php$ shopping_cPath_17/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=18$
+RewriteRule ^shopping\.php$ shopping_cPath_18/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=13$
+RewriteRule ^shopping\.php$ shopping_cPath_13/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=19$
+RewriteRule ^shopping\.php$ shopping_cPath_19/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=14$
+RewriteRule ^shopping\.php$ shopping_cPath_14/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=20$
+RewriteRule ^shopping\.php$ shopping_cPath_20/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=15$
+RewriteRule ^shopping\.php$ shopping_cPath_15/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=21$
+RewriteRule ^shopping\.php$ shopping_cPath_21/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=16$
+RewriteRule ^shopping\.php$ shopping_cPath_16/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;page\=1&amp;sort\=2d$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;page\=1&amp;sort\=3a$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;products_id\=4$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=4$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;products_id\=5$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=5$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;products_id\=9$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=9$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;products_id\=6$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=6$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;products_id\=7$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=7$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;products_id\=12$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=12$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;products_id\=8$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=8$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;products_id\=11$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=11$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;products_id\=10$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=10$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=3$
+RewriteRule ^shopping\.php$ shopping_cPath_3/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6&amp;page\=1&amp;sort\=2d$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6&amp;page\=1&amp;sort\=3a$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6&amp;products_id\=24$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=24$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6&amp;products_id\=23$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=23$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6&amp;products_id\=26$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=26$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6&amp;products_id\=25$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=25$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=6$
+RewriteRule ^shopping\.php$ shopping_cPath_6/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;page\=1&amp;sort\=2d$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;page\=1&amp;sort\=3a$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;products_id\=2$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=2$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;products_id\=3$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=3$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;products_id\=30$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=30$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;products_id\=34$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=34$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;products_id\=33$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=33$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;products_id\=1$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=1$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;products_id\=32$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=32$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;products_id\=31$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=31$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;products_id\=29$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=29$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=2$
+RewriteRule ^shopping\.php$ shopping_cPath_2/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;page\=1&amp;sort\=2d$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;page\=1&amp;sort\=3a$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;products_id\=15$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=15$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;products_id\=16$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=16$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;products_id\=13$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=13$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;products_id\=17$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=17$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;products_id\=14$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=14$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=9$
+RewriteRule ^shopping\.php$ shopping_cPath_9/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7&amp;page\=1&amp;sort\=2d$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7&amp;page\=1&amp;sort\=3a$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7&amp;products_id\=18$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=18$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7&amp;products_id\=19$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=19$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7&amp;products_id\=21$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=21$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7&amp;products_id\=20$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=20$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=7$
+RewriteRule ^shopping\.php$ shopping_cPath_7/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=4$
+RewriteRule ^shopping\.php$ shopping_cPath_4/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=5&amp;products_id\=27$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=5&amp;products_id\=28$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=5&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=28$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=5&amp;products_id\=22$
+RewriteRule ^product_info\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=5&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=22$
+RewriteRule ^shopping\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=5$
+RewriteRule ^shopping\.php$ shopping_cPath_5/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=11$
+RewriteRule ^shopping\.php$ shopping_cPath_11/? [L,R=301]
+RewriteRule ^map\/apollo\-hospital\-5.html$ / [L,R=301]
+RewriteRule ^by\-country\/india.html$ / [L,R=301]
+RewriteRule ^by\-city\/new\-delhi.html$ / [L,R=301]
+RewriteRule ^hospital\/apollo\-hospital\-5\/comments.html$ / [L,R=301]
+RewriteRule ^center.html$ / [L,R=301]
+RewriteRule ^iframe.html$ / [L,R=301]
+RewriteRule ^treat_2.html$ / [L,R=301]
+RewriteRule ^treat_31.html$ / [L,R=301]
+RewriteRule ^treat_5.html$ / [L,R=301]
+RewriteRule ^treat_7.html$ / [L,R=301]
+RewriteRule ^treat_9.html$ / [L,R=301]
+RewriteRule ^treat_4.html$ / [L,R=301]
+RewriteRule ^treat_6.html$ / [L,R=301]
+RewriteRule ^treat_8.html$ / [L,R=301]
+RewriteRule ^treat_3.html$ / [L,R=301]
+RewriteRule ^treat_16.html$ / [L,R=301]
+RewriteRule ^treat_29.html$ / [L,R=301]
+RewriteRule ^treat_30.html$ / [L,R=301]
+RewriteRule ^map\/bangkok\-international\-hospital\-6.html$ / [L,R=301]
+RewriteRule ^hospital\/bangkok\-international\-hospital\-6\/comments.html$ / [L,R=301]
+RewriteRule ^treat_34.html$ / [L,R=301]
+RewriteRule ^treat_14.html$ / [L,R=301]
+RewriteRule ^map\/dental\-white\-clinic\-9.html$ / [L,R=301]
+RewriteRule ^hospital\/dental\-white\-clinic\-9\/comments.html$ / [L,R=301]
+RewriteRule ^treat_17.html$ / [L,R=301]
+RewriteRule ^treat_28.html$ / [L,R=301]
+RewriteRule ^treat_23.html$ / [L,R=301]
+RewriteRule ^treat_11.html$ / [L,R=301]
+RewriteRule ^treat_15.html$ / [L,R=301]
+RewriteRule ^treat_38.html$ / [L,R=301]
+RewriteRule ^treat_12.html$ / [L,R=301]
+RewriteRule ^treat_19.html$ / [L,R=301]
+RewriteRule ^treat_13.html$ / [L,R=301]
+RewriteRule ^treat_27.html$ / [L,R=301]
+RewriteRule ^treat_25.html$ / [L,R=301]
+RewriteRule ^map\/european\-dental\-center\-10.html$ / [L,R=301]
+RewriteRule ^by\-country\/czech\-republic.html$ / [L,R=301]
+RewriteRule ^by\-city\/prague.html$ / [L,R=301]
+RewriteRule ^hospital\/european\-dental\-center\-10\/comments.html$ / [L,R=301]
+RewriteRule ^treat_35.html$ / [L,R=301]
+RewriteRule ^treat_21.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^index\.php$ index_php/? [L,R=301]
+RewriteRule ^privacy\-policy.html$ / [L,R=301]
+RewriteRule ^width\=600,height\=400.html$ / [L,R=301]
+RewriteRule ^parking\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^ses\=$
+RewriteRule ^search\/fb\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=5&amp;page\=1&amp;sort\=2d$
+RewriteRule ^shopping\.php$ shopping_cPath_5_page_1_sort_2d/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=5&amp;page\=1&amp;sort\=3a$
+RewriteRule ^shopping\.php$ shopping_cPath_5_page_1_sort_3a/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^cPath\=5&amp;sort\=2a&amp;action\=buy_now&amp;products_id\=27$
+RewriteRule ^shopping\.php$ shopping_cPath_5_sort_2a_action_buy_now_products_id_27/? [L,R=301]
+RewriteRule ^treatments\/privacy\-policy.html$ / [L,R=301]
+RewriteRule ^hospital\/superior\-a\-r\-t\-11.html$ / [L,R=301]
+RewriteRule ^hospital\/superior\-a\-r\-t\-11\/overview.html$ / [L,R=301]
+RewriteRule ^hospital\/superior\-a\-r\-t\-11\/treatment\-prices.html$ / [L,R=301]
+RewriteRule ^hospital\/superior\-a\-r\-t\-11\/gallery.html$ / [L,R=301]
+RewriteRule ^hospital\/superior\-a\-r\-t\-11\/nearby\-hotels.html$ / [L,R=301]
+RewriteRule ^hospital\/superior\-a\-r\-t\-11\/map\-location.html$ / [L,R=301]
+RewriteRule ^hospital\/superior\-a\-r\-t\-11\/comments.html$ / [L,R=301]
+RewriteRule ^treatments\/width\=600,height\=400.html$ treatments/width_600_height_400/? [L,R=301]
+RewriteRule ^41230.html$ / [L,R=301]
+RewriteRule ^truncate.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=recreation$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_recreation/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=shopping$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_shopping/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=society$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_society/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=sports$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_sports/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=technology$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_technology/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=accommodation\-and\-travel$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_accommodation-and-travel/? [L,R=301]
+RewriteRule ^,.html$ / [L,R=301]
+RewriteRule ^31646.html$ / [L,R=301]
+RewriteRule ^r\-comment31646.html$ / [L,R=301]
+RewriteRule ^ra\-comment31646.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^&req\=ct&id\=$
+RewriteRule ^review\-articles\/wp\-jan\-poster\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^&req\=rc&sc\=$
+RewriteRule ^wp\-jan\-poster\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^&req\=rc&sc\=$
+RewriteRule ^review\-articles\/wp\-jan\-poster\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=advertising\-and\-marketing$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_advertising-and-marketing/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=agriculture$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_agriculture/? [L,R=301]
+RewriteRule ^31433.html$ / [L,R=301]
+RewriteRule ^r\-comment31433.html$ / [L,R=301]
+RewriteRule ^ra\-comment31433.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=arts\-and\-crafts$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_arts-and-crafts/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=business\-management\-and\-services$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_business-management-and-services/? [L,R=301]
+RewriteRule ^36156.html$ / [L,R=301]
+RewriteRule ^39038.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=cars\-and\-transport$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_cars-and-transport/? [L,R=301]
+RewriteRule ^30551.html$ / [L,R=301]
+RewriteRule ^r\-comment30551.html$ / [L,R=301]
+RewriteRule ^ra\-comment30551.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=children\-and\-babies$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_children-and-babies/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=consumer\-electronics$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_consumer-electronics/? [L,R=301]
+RewriteRule ^38223.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=education$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_education/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=entertainment$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_entertainment/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=games$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_games/? [L,R=301]
+RewriteRule ^34411.html$ / [L,R=301]
+RewriteRule ^34963.html$ / [L,R=301]
+RewriteRule ^36232.html$ / [L,R=301]
+RewriteRule ^35258.html$ / [L,R=301]
+RewriteRule ^36884.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=health\-and\-fitness$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_health-and-fitness/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=home\-improvements$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_home-improvements/? [L,R=301]
+RewriteRule ^30125.html$ / [L,R=301]
+RewriteRule ^r\-comment30125.html$ / [L,R=301]
+RewriteRule ^ra\-comment30125.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=human\-resource$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_human-resource/? [L,R=301]
+RewriteRule ^30289.html$ / [L,R=301]
+RewriteRule ^r\-comment30289.html$ / [L,R=301]
+RewriteRule ^ra\-comment30289.html$ / [L,R=301]
+RewriteRule ^31622.html$ / [L,R=301]
+RewriteRule ^r\-comment31622.html$ / [L,R=301]
+RewriteRule ^ra\-comment31622.html$ / [L,R=301]
+RewriteRule ^31953.html$ / [L,R=301]
+RewriteRule ^r\-comment31953.html$ / [L,R=301]
+RewriteRule ^ra\-comment31953.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=internet\-and\-web\-services$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_internet-and-web-services/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=investing\-and\-finance$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_investing-and-finance/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=news\-and\-media$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_news-and-media/? [L,R=301]
+RewriteRule ^30201.html$ / [L,R=301]
+RewriteRule ^r\-comment30201.html$ / [L,R=301]
+RewriteRule ^ra\-comment30201.html$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=real\-estate\-and\-property$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_real-estate-and-property/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=post\-surgery\-shopping$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_post-surgery-shopping/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=how\-to\-say\-I\-love\-you\-with\-engagement\-rings$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_how-to-say-I-love-you-with-engagement-rings/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=u2\-tickets\-for\-concerts\-at\-home\-or\-abroad$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_u2-tickets-for-concerts-at-home-or-abroad/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=curing\-the\-disease\-by\-alcohol\-rehabilitation$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_curing-the-disease-by-alcohol-rehabilitation/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=buying\-a\-new\-laptop\-today$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_buying-a-new-laptop-today/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=cruises\-why\-not\-take\-one\-today$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_cruises-why-not-take-one-today/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^reviews\=if\-you\-are\-looking\-for\-radiators\-online\-is\-the\-only\-place\-to\-go$
+RewriteRule ^review\-articles\/reviews\.php$ review-articles/reviews_reviews_if-you-are-looking-for-radiators-online-is-the-only-place-to-go/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^currency\=$
+RewriteRule ^cost\-comparisons[\/]?$ cost-comparisons/currency/? [L,R=301]
+RewriteRule ^highslide\/graphics\/privacy\-policy.html$ / [L,R=301]
+RewriteRule ^highslide\/graphics\/width\=600,height\=400.html$ / [L,R=301]
+RewriteRule ^tell_a_friend\.php$ / [L,R=301]
+RewriteCond %{QUERY_STRING} ^products_id\=$
+RewriteRule ^product_info\.php$ product_info_products_id/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^img\=images\%2F021\.JPG&w\=152&h\=114$
+RewriteRule ^product_thumb\.php$ product_thumb_img_images/021_JPG_w_152_h_114/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^img\=images\%2Fpic_male1\.jpg&w\=114&h\=114$
+RewriteRule ^product_thumb\.php$ product_thumb_img_images/pic_male1_jpg_w_114_h_114/? [L,R=301]
+RewriteCond %{QUERY_STRING} ^action\=add_product$
+RewriteRule ^product_info\.php$ product_info_action_add_product/? [L,R=301]
+
+# Redirect all extensions to html
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.shtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.phtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.jhtml$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.htm$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.php$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.aspx$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.asp$ $1.html [L,NC,R=301]
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)\.jsp$ $1.html [L,NC,R=301]
+# End: Redirect all extensions to html

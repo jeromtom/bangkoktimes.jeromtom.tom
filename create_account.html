@@ -1,0 +1,1003 @@
+<!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="LTR" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ <title>| Mediseekers | Medical Tourism</title>
+	<link rel="canonical" href="http://mediseekers.com/create_account/" />
+ <meta name="Description" content="Mediseekers | Medical Tourism"/>
+ <meta name="Keywords" content="Mediseekers | Medical Tourism"/>
+ <meta name="robots" content="noodp"/>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<!-- EOF: Generated Meta Tags -->
+<base href=".">
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+<script language="javascript"><!--
+var form = "";
+var submitted = false;
+var error = false;
+var error_message = "";
+function check_input(field_name, field_size, message) {
+  if (form.elements[field_name] && (form.elements[field_name].type != "hidden")) {
+    var field_value = form.elements[field_name].value;
+    if (field_value.length < field_size) {
+      error_message = error_message + "* " + message + "\n";
+      error = true;
+    }
+  }
+}
+function check_radio(field_name, message) {
+  var isChecked = false;
+  if (form.elements[field_name] && (form.elements[field_name].type != "hidden")) {
+    var radio = form.elements[field_name];
+    for (var i=0; i<radio.length; i++) {
+      if (radio[i].checked == true) {
+        isChecked = true;
+        break;
+      }
+    }
+    if (isChecked == false) {
+      error_message = error_message + "* " + message + "\n";
+      error = true;
+    }
+  }
+}
+function check_select(field_name, field_default, message) {
+  if (form.elements[field_name] && (form.elements[field_name].type != "hidden")) {
+    var field_value = form.elements[field_name].value;
+    if (field_value == field_default) {
+      error_message = error_message + "* " + message + "\n";
+      error = true;
+    }
+  }
+}
+function check_password(field_name_1, field_name_2, field_size, message_1, message_2) {
+  if (form.elements[field_name_1] && (form.elements[field_name_1].type != "hidden")) {
+    var password = form.elements[field_name_1].value;
+    var confirmation = form.elements[field_name_2].value;
+    if (password.length < field_size) {
+      error_message = error_message + "* " + message_1 + "\n";
+      error = true;
+    } else if (password != confirmation) {
+      error_message = error_message + "* " + message_2 + "\n";
+      error = true;
+    }
+  }
+}
+function check_password_new(field_name_1, field_name_2, field_name_3, field_size, message_1, message_2, message_3) {
+  if (form.elements[field_name_1] && (form.elements[field_name_1].type != "hidden")) {
+    var password_current = form.elements[field_name_1].value;
+    var password_new = form.elements[field_name_2].value;
+    var password_confirmation = form.elements[field_name_3].value;
+    if (password_current.length < field_size) {
+      error_message = error_message + "* " + message_1 + "\n";
+      error = true;
+    } else if (password_new.length < field_size) {
+      error_message = error_message + "* " + message_2 + "\n";
+      error = true;
+    } else if (password_new != password_confirmation) {
+      error_message = error_message + "* " + message_3 + "\n";
+      error = true;
+    }
+  }
+}
+function check_form(form_name) {
+  if (submitted == true) {
+    alert("This form has already been submitted. Please press Ok and wait for this process to be completed.");
+    return false;
+  }
+  error = false;
+  form = form_name;
+  error_message = "Errors have occured during the process of your form.\n\nPlease make the following corrections:\n\n";
+  check_input("firstname", 2, "Your First Name must contain a minimum of 2 characters.");
+  check_input("lastname", 2, "Your Last Name must contain a minimum of 2 characters.");
+  check_input("email_address", 6, "Your E-Mail Address must contain a minimum of 6 characters.");
+  check_input("street_address", 5, "Your Street Address must contain a minimum of 5 characters.");
+  check_input("postcode", 4, "Your Post Code must contain a minimum of 4 characters.");
+  check_input("city", 3, "Your City must contain a minimum of 3 characters.");
+  check_select("country", "", "You must select a country from the Countries pull down menu.");
+  check_input("telephone", 3, "Your Telephone Number must contain a minimum of 3 characters.");
+  check_password("password", "confirmation", 5, "Your Password must contain a minimum of 5 characters.", "The Password Confirmation must match your Password.");
+  check_password_new("password_current", "password_new", "password_confirmation", 5, "Your Password must contain a minimum of 5 characters.", "Your new Password must contain a minimum of 5 characters.", "The Password Confirmation must match your new Password.");
+  if (error == true) {
+    alert(error_message);
+    return false;
+  } else {
+    submitted = true;
+    return true;
+  }
+}
+//--></script>
+</head>
+<body onload="MM_preloadImages('images/menu/faq.gif','images/menu/cost.gif','images/menu/des.gif','images/menu/package.gif','images/menu/topten.gif','images/menu/enquir.gif','images/menu/book.gif','images/menu/shop.gif','images/menu/photo.gif','images/menu/home.gif')">
+<!-- header //-->
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="../css/tabcontent.css"/>
+<link rel="stylesheet" href="../css/bubble-tooltip.css" media="screen">
+<link href="../tutorsty.css" rel="stylesheet" type="text/css"/>
+<link href="../flexcrollstyles.css" rel="stylesheet" type="text/css"/>
+<link rel="shortcut icon" href="../favicon.ico">
+<script type="text/javascript" src="../js/bubble-tooltip.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../js/ELO.js"></script>
+<script type="text/javascript" language="javascript1.2" src="../js/Eolas.js"></script>
+<script type="text/javascript" src="../js/tabcontent.js"></script>
+<script type="text/javascript" src="../flexcroll.js"></script>
+<script type="text/javascript" src="../js/bmi_calc.js"></script>
+<script type="text/javascript" src="../highslide/highslide.js"></script>
+<script type="text/javascript">
+hs.showCredits = 0;
+hs.padToMinWidth = true;
+	// remove the registerOverlay call to disable the controlbar
+	hs.registerOverlay(
+    	{
+    		thumbnailId: null,
+    		overlayId: 'controlbar',
+    		position: 'top right',
+    		hideOnMouseOut: true
+		}
+	);
+    hs.graphicsDir = 'highslide/graphics/';
+    hs.outlineType = 'rounded-white';
+    // Tell Highslide to use the thumbnail's title for captions
+    hs.captionEval = 'this.thumb.title';
+   Browser_Name = navigator.appName;
+   Browser_Ver  = parseInt(navigator.appVersion);
+   if((Browser_Name == "Netscape" && Browser_Ver >= 3) || (Browser_Name == "Microsoft Internet Explorer" && Browser_Ver >= 4)) Browser_Gen = ">=3rd";
+   else Browser_Gen = "<3rd";
+   if (Browser_Gen == '>=3rd') {
+   num_of_slides = 15;    // Declare the number of slides in your show
+   slide_num = 1;        // Which slide loads ups first
+   // Description of each slide
+   desc1 = "Arrival";
+   desc2 = "Corner Wing Front";
+   desc3 = "Baan Davis Swimming Pool";
+   desc4 = "Bangkok Hospital";
+   desc5 = "Bangkok Hospital";
+   desc6 = "Bangkok Hospital";
+   desc7 = "Bangkok Hospital";
+   desc8 = "Bangkok Hospital";
+   desc9 = "Bangkok Hospital";
+   desc10 = "Waterfall Kanchanaburi";
+   desc11 = "Waterfall Kanchanaburi";
+   desc12 = "Waterfall Kanchanaburi";
+   desc13 = "Waterfall Kanchanaburi";
+   desc14 = "Sofitel";
+   desc15 = "Best Hotels";
+   }
+   //  These functions alter the slide_num accordingly
+   function firstslide(){
+     slide_num = 1;
+     changeslide();
+   }
+   function prevslide(){
+     slide_num = slide_num - 1;
+     if(slide_num < 1){
+       slide_num = num_of_slides;
+     }
+     changeslide();
+   }
+   function nextslide(){
+     slide_num = slide_num + 1;
+     if(slide_num > num_of_slides){
+       slide_num = 1
+     }
+     changeslide();
+   }
+   function lastslide(){
+     slide_num = 15;
+     changeslide();
+   }
+   //  This function changes the slide and the description box according to the slide_num
+   function changeslide(){        
+     //  Changes the slide
+     eval('document.picbox.src = "pic' + slide_num + '.jpg"');
+     //  Changes the description box
+     eval('document.descform.descbox.value = " ' + slide_num + ': ' + eval('desc' + slide_num) + '"');
+   }
+   // end hiding contents -->
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<div id="bubble_tooltip">
+	<div class="bubble_top"><span></span></div>
+	<div class="bubble_middle"><span id="bubble_tooltip_content">Content is comming here as you probably can see.Content is comming here as you probably can see.</span></div>
+	<div class="bubble_bottom"></div>
+</div>
+<table width="912" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td scope="col" width="6" class="border_left_bg" valign="top">&nbsp;</td>
+    <td scope="col" width="900" bgcolor="#FFFFFF" valign="top"><table width="900" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td scope="col" height="82" style="background:url(../images/bg_header.gif) no-repeat" align="left" valign="top"><table width="900" border="0" cellspacing="0" cellpadding="0" height="82">
+          <tr>
+            <td width="650" align="left" scope="col"><table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td></td>
+              </tr>
+            </table></td>
+            <td width="250" align="left" class="txt-name-top" scope="col"><strong>Thailand/Asia:+66-2-663-8108<br/>
+              US/Canada: 1-866-389-7430 (Toll Free)<br/>
+              UK: +44-207-183-0917<br/>
+              Australia: +61-2-9037-2450 </strong></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+        <table width="900" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td scope="col" height="31" style="background:url(http://www.mediseekers.com/images/bg_menu_link.gif) repeat-x" align="center"><table width="900" border="0" cellspacing="0" cellpadding="0" height="31">
+                <tr>
+                  <td width="18" scope="col">&nbsp;</td>
+                  <td width="53" scope="col"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('home','','images/menu/home.gif',1)"></a></td>
+                  <td width="2" scope="col"></td>
+                  <td width="48" scope="col"><a href="../faqs/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('faqs','','images/menu/faq.gif',1)"></a></td>
+                  <td width="2" scope="col"></td>
+                  <td width="119" scope="col"><a href="../cost-comparison/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('cost comparison','','images/menu/cost.gif',1)"></a></td>
+                  <td width="2" scope="col"></td>
+                  <td width="95" scope="col"><a href="../destinations/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('destinations','','images/menu/des.gif',1)"></a></td>
+                  <td width="2" scope="col"></td>
+                  <td width="98" scope="col"><a href="../our-packages/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('our packages','','images/menu/package.gif',1)"></a></td>
+                  <td width="2" scope="col"></td>
+                  <td width="124" scope="col"><a href="../topten-packages/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('top ten packages','','images/menu/topten.gif',1)"></a></td>
+                  <td width="2" scope="col"></td>
+                  <td width="72" scope="col"><a href="../enquiries/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('enquiries','','images/menu/enquir.gif',1)"></a></td>
+                  <td width="2" scope="col"></td>
+                  <td width="85" scope="col"><a href="../book/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Booking','','images/menu/book.gif',1)"></a></td>
+                  <td width="2" scope="col"></td>
+                  <td width="42" scope="col"><a href="../shopping/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('shopping','','images/menu/shop.gif',1)"></a></td>
+                  <td width="2" scope="col"></td>
+                  <td width="80" scope="col"><a href="../photobook/" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('photo book','','images/menu/photo.gif',1)"></a></td>
+                  <td width="18" scope="col">&nbsp;</td>
+                </tr>
+            </table></td>
+          </tr>
+        </table>
+    </td>
+    <td scope="col" width="6" class="border_right_bg" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<table width="912" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td scope="col" width="6" class="border_left_bg" valign="top">&nbsp;</td>
+    <td scope="col" width="900" bgcolor="#FFFFFF" valign="top"><table width="900" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td scope="col" align="center">&nbsp;
+            </td>
+          </tr>
+      </table></td>
+    <td scope="col" width="6" class="border_right_bg" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<table width="912" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td scope="col" width="6" class="border_left_bg" valign="top">&nbsp;</td>
+    <td scope="col" width="900" bgcolor="#FFFFFF" valign="top"><table width="900" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td scope="col" align="center">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+    <td colspan="2"></td>
+  </tr>
+  <tr class="headerNavigation">
+    <td height="20" class="headerNavigation">&nbsp;&nbsp;<a href="/" class="headerNavigation">Top</a> &raquo; <a href="../shopping/" class="headerNavigation">Catalog</a> &raquo; <a href="../create_account/" class="headerNavigation">Create an Account</a></td>
+    <td align="right" class="headerNavigation"><a href="../account/" class="headerNavigation">My Account</a> &nbsp;|&nbsp; <a href="../shopping_cart/" class="headerNavigation">Cart Contents</a> &nbsp;|&nbsp; <a href="../checkout_shipping/" class="headerNavigation">Checkout</a> &nbsp;&nbsp;</td>
+  </tr>
+</table>
+ </td></tr>
+      </table></td>
+    <td scope="col" width="6" class="border_right_bg" valign="top">&nbsp;</td>
+  </tr>
+</table><!-- header_eof //-->
+<!-- body //-->
+<table width="912" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td scope="col" width="6" class="border_left_bg" valign="top">&nbsp;</td>
+    <td scope="col" width="900" bgcolor="#FFFFFF" valign="top"><table width="900" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="285" valign="top"><table border="0" width="285" cellspacing="3" cellpadding="3">
+<!-- left_navigation //-->
+<!-- surgical_nemu //-->
+          <tr>
+            <td>
+<table width="285" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="285" border="0" cellspacing="0" cellpadding="0" style="background:url(../images/bg_menu_r2.gif) no-repeat top">
+  <tr>
+    <td style="height:12px;" valign="top"><div style="width:285px;">
+      <div id="glowingtabs">
+        <ul id="countrytabs">
+          <li class="selected"><a href="#" rel="country1" class="whitelink"> <span>&nbsp;&nbsp;    Surgical  &nbsp;&nbsp; &nbsp; </span></a></li>
+          <li><a href="#" rel="country2" class="whitelink"><span>Non-surgical</span></a></li>
+          <li><a href="#" rel="country3" class="whitelink"><span>Elective</span></a></li>
+        </ul>
+      </div>
+      <div id="country1" class="tabcontent">
+      <br><br>            <table width="285" border="0" cellspacing="0" cellpadding="0" style="line-height:14px;">
+              <tr height="38">
+                <td scope="col">&nbsp;</td>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/txt_surgical.gif" alt="surgical cosmetic surgery" width="235" height="20"/></td>
+              </tr>
+              <tr>
+                <td width="15" scope="col">&nbsp;</td>
+                <td width="13" scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td width="272" scope="col"><a href="../liposuction/" class="bluelink3">Liposuction (Fat Reduction)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../breast-aug/" class="bluelink3">Breast Augmentation</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../eyelid-surgery/" class="bluelink3">Eyelid Surgery (Bhlepharoplasty) </a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../nose-augmentation/" class="bluelink3">Nose Augmentation Surgery  (Rhinoplasty)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../nose-reduction/" class="bluelink3">Nose Reduction Surgery  (Rhinoplasty) </a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../tummy-tuck/" class="bluelink3">Tummy Tuck (Abdominoplasty) </a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../facelift/" class="bluelink3">Face Lift </a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../mommy/" class="bluelink3">Mommy Makeover</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../breast-reduction/" class="bluelink3">Breast Reduction </a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../breast-lift/" class="bluelink3">Breast Lift </a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../breast-implant/" class="bluelink3">Breast Implant Correction</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../pouty-lips/" class="bluelink3">Pouty lips (Lip Augmentation)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../designer-vagina/" class="bluelink3">Designer Vagina (Labiaplasty)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../buttock-lift/" class="bluelink3">Buttock Lift</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../ear-surgery/" class="bluelink3">Ear Surgery </a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../chin-augmentation/" class="bluelink3">Chin Augmentation</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../gastric/" class="bluelink3">Gastric Banding</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../hair-transplant/" class="bluelink3">Hair Transplant</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../snoring-reduction/" class="bluelink3">Snoring Reduction</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../optic/" class="bluelink3">Optic (Lasik Eye Correction surgery)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../dental/" class="bluelink3">Dental </a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../hearing-aids/" class="bluelink3">Hearing Aids</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../contactlenses/" class="bluelink3">Contact Lenses </a></td>
+              </tr>
+            </table>
+      </div>
+      <div id="country2" class="tabcontent"><br><br>            <table width="285" border="0" cellspacing="0" cellpadding="0" style="line-height:14px;">
+              <tr height="38">
+                <td scope="col">&nbsp;</td>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/txt_non_surgical.gif" alt="non surgical treatment"/></td>
+              </tr>
+              <tr>
+                <td width="15" scope="col">&nbsp;</td>
+                <td width="13" scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td width="272" scope="col"><a href="../thermage/" class="bluelink3">Thermage (Natural Facelift)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../mesotherapy/" class="bluelink3">Mesotherapy (Weight Loss/Cellulite Reduction)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../botox/" class="bluelink3">Botox</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../laserhair/" class="bluelink3">Laser hair removal</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../restylane/" class="bluelink3">Restylane (Wrinkle Filler)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../microdermabrasion/" class="bluelink3">Microdermabrasion (Skin Rejuvenation)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../chemicalpeel/" class="bluelink3">Chemical Peel (Skin Rejuvenation)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../tattoo-removal/" class="bluelink3">Tattoo/Mole/Varicose Vein Removal</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../detox/" class="bluelink3">Detox</a></td>
+              </tr>
+            </table>
+      </div>
+      <div id="country3" class="tabcontent"><br><br>            <table width="285" border="0" cellspacing="0" cellpadding="0" style="line-height:14px;">
+              <tr height="38">
+                <td scope="col">&nbsp;</td>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/txt_elective.gif" alt="elective"/></td>
+              </tr>
+              <tr>
+                <td width="15" scope="col">&nbsp;</td>
+                <td width="13" scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td width="272" scope="col" class="txt-name-blue_list">Orthopaedic</td>
+              </tr>
+              <tr>
+                <td width="15" scope="col">&nbsp;</td>
+                <td width="13" scope="col">&nbsp;</td>
+                <td width="272" scope="col"><a href="../orthopaedic/" class="bluelink3">Knee Surgery</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><a href="../hip-surgery/" class="bluelink3">Hip Surgery</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><a href="../spine-surgery/" class="bluelink3">Spine Surgery</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../cardiac/" class="bluelink3">Cardiac (Heart)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../neurological/" class="bluelink3">Neurological (Gamma Knife) </a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../bariatric/" class="bluelink3">Bariatric (Obesity - Gastric Banding)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../eye/" class="bluelink3">Eye (Lasik Surgery)</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../dental/" class="bluelink3">Dental</a></td>
+              </tr>
+              <tr>
+                <td scope="col">&nbsp;</td>
+                <td scope="col"><img src="../images/list.gif" width="7" height="8"/></td>
+                <td scope="col"><a href="../health-check/" class="bluelink3">Health Check up / MRI/PET/CT Scans</a></td>
+              </tr>
+            </table>
+      </div>
+    </div>
+    </td>
+  </tr>
+</table></td>
+  </tr>
+  <tr>
+    <td><img src="../images/left_box_bottom.gif" width="285" height="6"/></td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- surgical_nemu eof //-->
+<!-- categories //-->
+          <tr>
+            <td>
+<table width="285" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="../images/left_box_top.gif" width="285" height="6"/></td>
+  </tr>
+  <tr>
+    <td style="border-left: 1px solid #CECECE; border-right: 1px solid #CECECE;"><img src="../images/shopping_categories.gif" width="235" height="20"/></td>
+  </tr>
+  <tr>
+    <td style="border-left: 1px solid #CECECE; border-right: 1px solid #CECECE;"><table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox2">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="3" class="infoBoxContents">
+  <tr>
+    <td><img src="../images/pixel_trans.gif" width="100%" height="1" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td class="boxText">&nbsp;&nbsp;<img src="../images/list.gif" width="7" height="8"/>&nbsp;<a class="bluelink3" href="../shopping_cPath_3/">Body Scrubs</a>&nbsp;(9)<br>&nbsp;&nbsp;<img src="../images/list.gif" width="7" height="8"/>&nbsp;<a class="bluelink3" href="../shopping_cPath_6/">Female Sex Products</a>&nbsp;(4)<br>&nbsp;&nbsp;<img src="../images/list.gif" width="7" height="8"/>&nbsp;<a class="bluelink3" href="../shopping_cPath_2/">Gifts</a>&nbsp;(9)<br>&nbsp;&nbsp;<img src="../images/list.gif" width="7" height="8"/>&nbsp;<a class="bluelink3" href="../shopping_cPath_9/">Hand & Body Lotions</a>&nbsp;(5)<br>&nbsp;&nbsp;<img src="../images/list.gif" width="7" height="8"/>&nbsp;<a class="bluelink3" href="../shopping_cPath_7/">Male Sex Products</a>&nbsp;(4)<br>&nbsp;&nbsp;<img src="../images/list.gif" width="7" height="8"/>&nbsp;<a class="bluelink3" href="../shopping_cPath_4/">Natural Organic Thai Herbs</a><br>&nbsp;&nbsp;<img src="../images/list.gif" width="7" height="8"/>&nbsp;<a class="bluelink3" href="../shopping_cPath_5/">Weight Loss</a>&nbsp;(3)<br>&nbsp;&nbsp;<img src="../images/list.gif" width="7" height="8"/>&nbsp;<a class="bluelink3" href="../shopping_cPath_11/">Wholesale</a><br></td>
+  </tr>
+  <tr>
+    <td><img src="../images/pixel_trans.gif" width="100%" height="1" border="0" alt=""></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td><img src="../images/left_box_bottom.gif" width="285" height="6"/></td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- categories_eof //-->
+<!-- currencies //-->
+          <tr>
+            <td>
+            <table width="285" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="../images/left_box_top.gif" width="285" height="6"/></td>
+  </tr>
+  <tr>
+    <td style="border-left: 1px solid #CECECE; border-right: 1px solid #CECECE;"></td>
+  </tr>
+  <tr>
+    <td style="border-left: 1px solid #CECECE; border-right: 1px solid #CECECE;">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr>
+  </tr>
+</table>
+<table border="0" width="100%" cellspacing="0" cellpadding="1" class="infoBox2">
+  <tr>
+    <td><table border="0" width="100%" cellspacing="0" cellpadding="3" class="infoBoxContents">
+  <tr>
+    <td><img src="../images/pixel_trans.gif" width="100%" height="1" border="0" alt=""></td>
+  </tr>
+  <tr>
+    <td align="center" class="boxText"><form name="currencies" action="../create_account/" method="get"><select name="currency" onchange="this.form.submit();" style="width: 100%"><option value="GBP">British Pounds</option><option value="USD" selected>US Dollars</option><option value="THB">Thai Baht</option><option value="EUR">Euro's</option><option value="AUD">Australian Dollars</option></select></form></td>
+  </tr>
+  <tr>
+    <td><img src="../images/pixel_trans.gif" width="100%" height="1" border="0" alt=""></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td><img src="../images/left_box_bottom.gif" width="285" height="6"/></td>
+  </tr>
+</table>
+            </td>
+          </tr>
+<!-- currencies_eof //-->
+<!-- below //-->
+          <tr>
+            <td>
+              <table width="285" border="0" cellspacing="0" cellpadding="0" valign="top">
+              <tr>
+                  <td scope="col" height="240" align="center" style="background:url(http://www.mediseekers.com/images/bg_currency.gif) center no-repeat">
+<iframe src="../free/theFinancialsConverter_tiny_tb_ext_iframe/" width="147" marginheight="0" marginwidth="0" height="215" hspace="0" vspace="0" frameborder="no" title="Currency Converter"></iframe>
+</td>
+                </tr>
+                <tr>
+                  <td scope="col"><img src="../images/spacer.gif" width="5" height="3"/></td>
+                </tr>
+                <tr>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <td scope="col"><img src="../images/spacer.gif" width="5" height="3"/></td>
+                </tr>
+                <tr>
+                  <td scope="col"><a href="../dental/"></a></td>
+                </tr>
+                <tr>
+                  <td scope="col"><img src="../images/spacer.gif" width="5" height="3"/></td>
+                </tr>
+                <tr>
+                  <td scope="col" height="260" style="background:url(http://www.mediseekers.com/images/bg_health_banner.gif) center no-repeat"><div align="center"><a href="http://www.tkqlhce.com/4h102c-7w36LOUUPTMULNMOVQNVU" target="_blank">
+                  </a>
+                  </div></td>
+                </tr>
+                <tr>
+                  <td scope="col"><img src="../images/spacer.gif" width="5" height="3"/></td>
+                </tr>
+                <tr>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <td scope="col" height="208" style="background:url(http://www.mediseekers.com/images/bg_video.gif) no-repeat top" align="center"><embed src="http://www.mediseekers.com/flvplayer.swf" width="270" height="185" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" flashvars="width=270&amp;height=185&amp;file=flv/bangkok_hospital.flv"/></embed></td>
+                </tr>
+                <tr>
+                  <td scope="col"><img src="../images/spacer.gif" width="5" height="3"/></td>
+                </tr>
+                <tr>
+                  <td scope="col"></td>
+                </tr>
+                <tr>
+                  <td scope="col" height="231" valign="top" style="background:url(http://www.mediseekers.com/images/bg_photo.gif) no-repeat top; "><table border="0" cellspacing="0" cellpadding="2" cols="1" width="285">
+                      <tr>
+                        <td height="10px;"></td>
+                      </tr>
+                      <tr>
+                        <td><center>
+                            <table border="0" cellspacing="0" cellpadding="0" cols="1" width="200">
+                              <tr>
+                                <td align="center" valign="top"></td>
+                              </tr>
+                              <tr>
+                                <td height="10" align="center"><form name="descform" id="descform">
+                                    <input name="descbox" style="border:0; background-color:#ffffff;  width:100%; text-align:center" onfocus="this.blur()" rows="3" cols="30" wrap="virtual" class="txt-name-gray3"/>
+                                </form></td>
+                              </tr>
+                              <tr>
+                                <td><center>
+                                    <table border="0" cellspacing="0" cellpadding="0" cols="4" width="250">
+                                      <tr>
+                                        <td width="14" align="center" valign="top"></td>
+                                        <td width="63" align="center" valign="top"><a href="javascript:prevslide()"></a></td>
+                                        <td width="3" align="center" valign="top" class="txt-name-gray">|</td>
+                                        <td width="49" align="center" valign="top"><a href="javascript:nextslide()"></a></td>
+                                        <td width="21" align="center" valign="top"></td>
+                                      </tr>
+                                    </table>
+                                </center></td>
+                              </tr>
+                            </table>
+                        </center></td>
+                      </tr>
+                    </table>
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td scope="col"></td>
+                        </tr>
+                      </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td scope="col">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td scope="col">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td scope="col"><div align="center">
+                            <p><a target="_blank" href="http://www.kqzyfj.com/4466ehpdlo25BB6A3B243847CC3"><br>
+                            Cheap Flights</a></p>
+                            <p><a href="http://groups.google.com/group/mediseekers" target="_blank">Mediseekers Forum</a></p>
+                          </div></td>
+                        </tr>
+                        <tr>
+                          <td scope="col">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td scope="col">&nbsp;</td>
+                        </tr>
+                  </table></td>
+                </tr>
+              </table>            </td>
+</tr>
+<!-- below_eof //--><!-- left_navigation_eof //-->
+    </table></td>
+<!-- body_text //-->
+    <td width="100%" valign="top"><form name="create_account" action="../create_account/" method="post" onsubmit="return check_form(create_account);"><input type="hidden" name="action" value="process"><table border="0" width="100%" cellspacing="0" cellpadding="3">
+      <tr>
+        <td><table border="0" width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="pageHeading">My Account Information</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="../images/pixel_trans.gif" width="90%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td class="smallText"><br><font color="#FF0000"><small><b>NOTE:</b></font></small> If you already have an account with us, please login at the <a href="../login/"><u>login page</u></a>.</td>
+      </tr>
+      <tr>
+        <td><img src="../images/pixel_trans.gif" width="90%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
+          <tr>
+            <td class="main"><b>Your Personal Details</b></td>
+           <td class="inputRequirement" align="right">* Required information</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="1" cellpadding="2">
+          <tr>
+            <td><table width="100%" border="0" cellpadding="2" cellspacing="2">
+                            <tr>
+                <td width="30%" class="main">First Name:</td>
+                <td class="main"><input type="text" name="firstname">&nbsp;<span class="inputRequirement">*</span></td>
+              </tr>
+              <tr>
+                <td width="30%" class="main">Last Name:</td>
+                <td class="main"><input type="text" name="lastname">&nbsp;<span class="inputRequirement">*</span></td>
+              </tr>
+                            <tr>
+                <td width="30%" class="main">E-Mail Address:</td>
+                <td class="main"><input type="text" name="email_address">&nbsp;<span class="inputRequirement">*</span></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="../images/pixel_trans.gif" width="90%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td class="main"><b>Company Details</b></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="1" cellpadding="2">
+          <tr>
+            <td><table width="100%" border="0" cellpadding="2" cellspacing="2">
+              <tr>
+                <td width="30%" class="main">Company Name:</td>
+                <td class="main"><input type="text" name="company">&nbsp;</td>
+              </tr>
+              <!-- BOF Separate Pricing Per Customer: field for tax id number -->
+              <tr>
+                <td width="30%" class="main">Company's tax id number:</td>
+                <td class="main"><input type="text" name="company_tax_id">&nbsp;</td>
+              </tr>
+              <!-- EOF Separate Pricing Per Customer: field for tax id number -->
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="../images/pixel_trans.gif" width="90%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td class="main"><b>Your Address</b></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="1" cellpadding="2">
+          <tr>
+            <td><table width="100%" border="0" cellpadding="2" cellspacing="2">
+              <tr>
+                <td width="30%" class="main">Street Address:</td>
+                <td class="main"><input type="text" name="street_address">&nbsp;<span class="inputRequirement">*</span></td>
+              </tr>
+                            <tr>
+                <td width="30%" class="main">Suburb:</td>
+                <td class="main"><input type="text" name="suburb">&nbsp;</td>
+              </tr>
+                            <tr>
+                <td width="30%" class="main">Post Code:</td>
+                <td class="main"><input type="text" name="postcode">&nbsp;<span class="inputRequirement">*</span></td>
+              </tr>
+              <tr>
+                <td width="30%" class="main">City:</td>
+                <td class="main"><input type="text" name="city">&nbsp;<span class="inputRequirement">*</span></td>
+              </tr>
+                            <tr>
+                <td width="30%" class="main">Country:</td>
+                <td class="main"><select name="country"><option value="" selected>Please Select</option><option value="1">Afghanistan</option><option value="2">Albania</option><option value="3">Algeria</option><option value="4">American Samoa</option><option value="5">Andorra</option><option value="6">Angola</option><option value="7">Anguilla</option><option value="8">Antarctica</option><option value="9">Antigua and Barbuda</option><option value="10">Argentina</option><option value="11">Armenia</option><option value="12">Aruba</option><option value="13">Australia</option><option value="14">Austria</option><option value="15">Azerbaijan</option><option value="16">Bahamas</option><option value="17">Bahrain</option><option value="18">Bangladesh</option><option value="19">Barbados</option><option value="20">Belarus</option><option value="21">Belgium</option><option value="22">Belize</option><option value="23">Benin</option><option value="24">Bermuda</option><option value="25">Bhutan</option><option value="26">Bolivia</option><option value="27">Bosnia and Herzegowina</option><option value="28">Botswana</option><option value="29">Bouvet Island</option><option value="30">Brazil</option><option value="31">British Indian Ocean Territory</option><option value="32">Brunei Darussalam</option><option value="33">Bulgaria</option><option value="34">Burkina Faso</option><option value="35">Burundi</option><option value="36">Cambodia</option><option value="37">Cameroon</option><option value="38">Canada</option><option value="39">Cape Verde</option><option value="40">Cayman Islands</option><option value="41">Central African Republic</option><option value="42">Chad</option><option value="43">Chile</option><option value="44">China</option><option value="45">Christmas Island</option><option value="46">Cocos (Keeling) Islands</option><option value="47">Colombia</option><option value="48">Comoros</option><option value="49">Congo</option><option value="50">Cook Islands</option><option value="51">Costa Rica</option><option value="52">Cote D'Ivoire</option><option value="53">Croatia</option><option value="54">Cuba</option><option value="55">Cyprus</option><option value="56">Czech Republic</option><option value="57">Denmark</option><option value="58">Djibouti</option><option value="59">Dominica</option><option value="60">Dominican Republic</option><option value="61">East Timor</option><option value="62">Ecuador</option><option value="63">Egypt</option><option value="64">El Salvador</option><option value="65">Equatorial Guinea</option><option value="66">Eritrea</option><option value="67">Estonia</option><option value="68">Ethiopia</option><option value="69">Falkland Islands (Malvinas)</option><option value="70">Faroe Islands</option><option value="71">Fiji</option><option value="72">Finland</option><option value="73">France</option><option value="74">France, Metropolitan</option><option value="75">French Guiana</option><option value="76">French Polynesia</option><option value="77">French Southern Territories</option><option value="78">Gabon</option><option value="79">Gambia</option><option value="80">Georgia</option><option value="81">Germany</option><option value="82">Ghana</option><option value="83">Gibraltar</option><option value="84">Greece</option><option value="85">Greenland</option><option value="86">Grenada</option><option value="87">Guadeloupe</option><option value="88">Guam</option><option value="89">Guatemala</option><option value="90">Guinea</option><option value="91">Guinea-bissau</option><option value="92">Guyana</option><option value="93">Haiti</option><option value="94">Heard and Mc Donald Islands</option><option value="95">Honduras</option><option value="96">Hong Kong</option><option value="97">Hungary</option><option value="98">Iceland</option><option value="99">India</option><option value="100">Indonesia</option><option value="101">Iran (Islamic Republic of)</option><option value="102">Iraq</option><option value="103">Ireland</option><option value="104">Israel</option><option value="105">Italy</option><option value="106">Jamaica</option><option value="107">Japan</option><option value="108">Jordan</option><option value="109">Kazakhstan</option><option value="110">Kenya</option><option value="111">Kiribati</option><option value="112">Korea, Democratic People's Republic of</option><option value="113">Korea, Republic of</option><option value="114">Kuwait</option><option value="115">Kyrgyzstan</option><option value="116">Lao People's Democratic Republic</option><option value="117">Latvia</option><option value="118">Lebanon</option><option value="119">Lesotho</option><option value="120">Liberia</option><option value="121">Libyan Arab Jamahiriya</option><option value="122">Liechtenstein</option><option value="123">Lithuania</option><option value="124">Luxembourg</option><option value="125">Macau</option><option value="126">Macedonia, The Former Yugoslav Republic of</option><option value="127">Madagascar</option><option value="128">Malawi</option><option value="129">Malaysia</option><option value="130">Maldives</option><option value="131">Mali</option><option value="132">Malta</option><option value="133">Marshall Islands</option><option value="134">Martinique</option><option value="135">Mauritania</option><option value="136">Mauritius</option><option value="137">Mayotte</option><option value="138">Mexico</option><option value="139">Micronesia, Federated States of</option><option value="140">Moldova, Republic of</option><option value="141">Monaco</option><option value="142">Mongolia</option><option value="143">Montserrat</option><option value="144">Morocco</option><option value="145">Mozambique</option><option value="146">Myanmar</option><option value="147">Namibia</option><option value="148">Nauru</option><option value="149">Nepal</option><option value="150">Netherlands</option><option value="151">Netherlands Antilles</option><option value="152">New Caledonia</option><option value="153">New Zealand</option><option value="154">Nicaragua</option><option value="155">Niger</option><option value="156">Nigeria</option><option value="157">Niue</option><option value="158">Norfolk Island</option><option value="159">Northern Mariana Islands</option><option value="160">Norway</option><option value="161">Oman</option><option value="162">Pakistan</option><option value="163">Palau</option><option value="164">Panama</option><option value="165">Papua New Guinea</option><option value="166">Paraguay</option><option value="167">Peru</option><option value="168">Philippines</option><option value="169">Pitcairn</option><option value="170">Poland</option><option value="171">Portugal</option><option value="172">Puerto Rico</option><option value="173">Qatar</option><option value="174">Reunion</option><option value="175">Romania</option><option value="176">Russian Federation</option><option value="177">Rwanda</option><option value="178">Saint Kitts and Nevis</option><option value="179">Saint Lucia</option><option value="180">Saint Vincent and the Grenadines</option><option value="181">Samoa</option><option value="182">San Marino</option><option value="183">Sao Tome and Principe</option><option value="184">Saudi Arabia</option><option value="185">Senegal</option><option value="186">Seychelles</option><option value="187">Sierra Leone</option><option value="188">Singapore</option><option value="189">Slovakia (Slovak Republic)</option><option value="190">Slovenia</option><option value="191">Solomon Islands</option><option value="192">Somalia</option><option value="193">South Africa</option><option value="194">South Georgia and the South Sandwich Islands</option><option value="195">Spain</option><option value="196">Sri Lanka</option><option value="197">St. Helena</option><option value="198">St. Pierre and Miquelon</option><option value="199">Sudan</option><option value="200">Suriname</option><option value="201">Svalbard and Jan Mayen Islands</option><option value="202">Swaziland</option><option value="203">Sweden</option><option value="204">Switzerland</option><option value="205">Syrian Arab Republic</option><option value="206">Taiwan</option><option value="207">Tajikistan</option><option value="208">Tanzania, United Republic of</option><option value="209">Thailand</option><option value="210">Togo</option><option value="211">Tokelau</option><option value="212">Tonga</option><option value="213">Trinidad and Tobago</option><option value="214">Tunisia</option><option value="215">Turkey</option><option value="216">Turkmenistan</option><option value="217">Turks and Caicos Islands</option><option value="218">Tuvalu</option><option value="219">Uganda</option><option value="220">Ukraine</option><option value="221">United Arab Emirates</option><option value="222">United Kingdom</option><option value="223">United States</option><option value="224">United States Minor Outlying Islands</option><option value="225">Uruguay</option><option value="226">Uzbekistan</option><option value="227">Vanuatu</option><option value="228">Vatican City State (Holy See)</option><option value="229">Venezuela</option><option value="230">Viet Nam</option><option value="231">Virgin Islands (British)</option><option value="232">Virgin Islands (U.S.)</option><option value="233">Wallis and Futuna Islands</option><option value="234">Western Sahara</option><option value="235">Yemen</option><option value="236">Yugoslavia</option><option value="237">Zaire</option><option value="238">Zambia</option><option value="239">Zimbabwe</option></select>&nbsp;<span class="inputRequirement">*</span></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="../images/pixel_trans.gif" width="90%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td class="main"><b>Your Contact Information</b></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="1" cellpadding="2">
+          <tr>
+            <td><table width="100%" border="0" cellpadding="2" cellspacing="2">
+              <tr>
+                <td width="30%" class="main">Telephone Number:</td>
+                <td class="main"><input type="text" name="telephone">&nbsp;<span class="inputRequirement">*</span></td>
+              </tr>
+              <tr>
+                <td width="30%" class="main">Fax Number:</td>
+                <td class="main"><input type="text" name="fax">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="../images/pixel_trans.gif" width="90%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td class="main"><b>Options</b></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="1" cellpadding="2">
+          <tr>
+            <td><table width="100%" border="0" cellpadding="2" cellspacing="2">
+              <tr>
+                <td width="30%" class="main">Newsletter:</td>
+                <td class="main"><div align="left"><input type="checkbox" name="newsletter" value="1">&nbsp;</div></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="../images/pixel_trans.gif" width="90%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td class="main"><b>Your Password</b></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="1" cellpadding="2">
+          <tr>
+            <td><table width="100%" border="0" cellpadding="2" cellspacing="2">
+              <tr>
+                <td width="30%" class="main">Password:</td>
+                <td class="main"><input type="password" name="password" maxlength="40">&nbsp;<span class="inputRequirement">*</span></td>
+              </tr>
+              <tr>
+                <td width="30%" class="main">Password Confirmation:</td>
+                <td class="main"><input type="password" name="confirmation" maxlength="40">&nbsp;<span class="inputRequirement">*</span></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="../images/pixel_trans.gif" width="90%" height="10" border="0" alt=""></td>
+      </tr>
+      <tr>
+        <td><table border="0" width="100%" cellspacing="1" cellpadding="2">
+          <tr>
+            <td><table border="0" width="100%" cellspacing="0" cellpadding="2">
+              <tr>
+                <td width="10"><img src="../images/pixel_trans.gif" width="10" height="1" border="0" alt=""></td>
+                <td><input type="image" src="http://www.mediseekers.com/includes/languages/english/images/buttons/button_continue.gif" border="0" alt="Continue" title=" Continue "></td>
+                <td width="10"><img src="../images/pixel_trans.gif" width="10" height="1" border="0" alt=""></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></form></td>
+<!-- body_text_eof //-->
+  </tr>
+</table>
+<!-- body_eof //--></td>
+    <td scope="col" width="6" class="border_right_bg" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<!-- footer //-->
+<table width="912" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td scope="col" width="6" class="border_left_bg" valign="top">&nbsp;</td>
+    <td scope="col" width="900" bgcolor="#FFFFFF" valign="top"><table width="900" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td scope="col" align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0" height="79">
+        <tr>
+          <td scope="col" height="3" class="footer_top"></td>
+        </tr>
+        <tr>
+          <td bgcolor="#d1e0e7"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>  <td scope="col" align="center" style="padding-left:0px;padding-bottom:5px; padding-top:5px;"><a href="index.html" class="bluelink">Home</a> | <a href="../faqs/" class="bluelink">FAQs</a> | <a href="../cost-comparison/" class="bluelink">Cost Comparison</a> | <a href="../destinations/" class="bluelink">Destinations</a> | <a href="../our-packages/" class="bluelink">Our packages</a> | <a href="../topten-packages/" class="bluelink">Top Ten Packages</a> | <a href="../enquiries/" class="bluelink">Enquiries</a> | <a href="../book/" class="bluelink">Book Now</a> | <a href="../shopping/" class="bluelink">Shopping</a> | <a href="../photobook/" class="bluelink">Photobook</a> | <a href="../affiliates/" class="bluelink">Affiliates</a> | <a href="../disclaimer/" class="bluelink">Disclaimer</a></td>
+              </tr>
+              <tr>
+                <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="71%" class="txt-name-gray2" style="padding-left:20px;padding-top:10px;" scope="col">All contents &copy; copyright 2007 MediSeekers.com  All rights reserved. </td>
+                      <td class="txt-name-gray2" scope="col"><div align="center">Solution by <a href="http://www.kode.asia/">Website Design</a></div></td>
+                      </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+          </tr>
+      </table></td>
+    <td scope="col" width="6" class="border_right_bg" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4776141-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type="text/javascript">
+            var countries=new ddtabcontent("countrytabs")
+            countries.setpersist(true)
+            countries.setselectedClassTarget("linkparent") //"link" or "linkparent"
+            countries.init()
+        </script><!-- footer_eof //-->
+</body>
+</html>

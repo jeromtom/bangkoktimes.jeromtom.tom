@@ -1,0 +1,912 @@
+/*
+  $Id: stylesheet.css 1739 2007-12-20 00:52:16Z hpdl $
+
+  osCommerce, Open Source E-Commerce Solutions
+  http://www.oscommerce.com
+
+  Copyright (c) 2003 osCommerce
+
+  Released under the GNU General Public License
+*/
+body, html {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+ }
+h1 { 
+ font-family: Verdana, Arial, sans-serif;
+ font-size: 15px;
+ font-weight: bold;
+ margin-bottom: 0;
+ padding-bottom: 0;
+ color: #2E3699;
+}
+
+h2 {
+ font-family: Verdana, Arial, sans-serif;
+ font-size: 14px;
+ font-weight: normal;
+ margin-bottom: 0;
+ padding-bottom: 0;
+}
+
+
+
+.boxText { font-family: Verdana, Arial, sans-serif; font-size: 11px; }
+.errorBox { font-family : Verdana, Arial, sans-serif; font-size : 11px; background: #ffb3b5; font-weight: bold; }
+.stockWarning { font-family : Verdana, Arial, sans-serif; font-size : 11px; color: #cc0033; }
+.productsNotifications { background: #f2fff7; }
+.orderEdit { font-family : Verdana, Arial, sans-serif; font-size : 11px; color: #009FD3; text-decoration: underline; }
+
+A.footerlinks {
+  color: #d1e0e7;
+  text-decoration: none;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+TD.footerlinks {
+  color: #d1e0e7;
+  text-decoration: none;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+A.footerlinks:hover {
+  color: #d1e0e7;
+  text-decoration: underline;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+FORM {
+	display: inline;
+}
+
+TR.header {
+  background: #ffffff;
+}
+
+TR.headerNavigation {
+  background: #FFFFFF;
+}
+
+TD.headerNavigation {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  background: #ffffff;
+  color: #000000;
+  font-weight : bold;
+}
+
+A.headerNavigation { 
+  color: #009fd3; 
+}
+
+A.headerNavigation:hover {
+  color: #009fd3;
+}
+
+TR.headerError {
+  background: #ff0000;
+}
+
+TD.headerError {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background: #ff0000;
+  color: #ffffff;
+  font-weight : bold;
+  text-align : center;
+}
+
+TR.headerInfo {
+  background: #00ff00;
+}
+
+TD.headerInfo {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  background: #00ff00;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+}
+
+TR.footer {
+  background: #ffffff;
+}
+
+TD.footer {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+.infoBox {
+  background:#CECECE;
+}
+
+.infoBox2 {
+ /* background:#CECECE; */
+}
+
+.infoBoxContents {
+  background: #FFFFFF;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+.infoBoxNotice {
+  background: #FF8E90;
+}
+
+.infoBoxNoticeContents {
+  background: #FFE6E6;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+.hos_heading_main{
+	font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #1c4d99;
+	text-decoration: none; 
+}
+
+.hos_heading2{
+	font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #1c4d99;
+	text-decoration: none; 
+}
+
+a.hos_heading2:link{
+	font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #1c4d99;
+	text-decoration: none; 
+}
+a.hos_heading2:visited{
+	font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #1c4d99;
+	text-decoration: none; 
+}
+a.hos_heading2:active{
+	font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #1c4d99;
+	text-decoration: none; 
+}
+a.hos_heading2:hover{
+	font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #009fd3;
+  background: #ffffff;
+  text-decoration: underline;
+}
+
+.hos_address{
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  /*color: #009fd3;*/
+}
+.hos_address span.country {
+	/*color: black;*/
+	color: #1C4D99;
+	font-weight: 900;
+}
+
+a.hos_address:link{
+	font-family: Verdana, Arial, sans-serif;
+  /*font-size: 14px;*/
+  font-weight: normal;
+  /*color: #009fd3;*/
+	text-decoration: none; 
+}
+a.hos_address:visited{
+	font-family: Verdana, Arial, sans-serif;
+  /*font-size: 12px;*/
+  font-weight: normal;
+  color: #009fd3;
+	text-decoration: none; 
+}
+a.hos_address:active{
+	font-family: Verdana, Arial, sans-serif;
+  /*font-size: 12px;*/
+  font-weight: normal;
+  color: #009fd3;
+	text-decoration: none; 
+}
+a.hos_address:hover{
+	font-family: Verdana, Arial, sans-serif;
+  /*font-size: 12px;*/
+  font-weight: normal;
+  color: #009fd3;
+  background: #ffffff;
+  text-decoration: underline;
+}
+.hos_address2{
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #009fd3;
+}
+
+TD.infoBoxHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  background: #ffffff;
+  color: #1c4d99;
+  text-align:center;
+}
+
+TD.infoBox, SPAN.infoBox {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+TR.accountHistory-odd, TR.addressBook-odd, TR.alsoPurchased-odd, TR.payment-odd, TR.productListing-odd, TR.productReviews-odd, TR.upcomingProducts-odd, TR.shippingOptions-odd {
+  background: #FFFFFF;
+}
+
+TR.accountHistory-even, TR.addressBook-even, TR.alsoPurchased-even, TR.payment-even, TR.productListing-even, TR.productReviews-even, TR.upcomingProducts-even, TR.shippingOptions-even {
+  background: #FFFFFF;
+}
+
+TABLE.productListing {
+  border-spacing: 1px;
+}
+
+.productListing-heading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+TD.productListing-data {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+A.pageResults {
+  color: #0000FF;
+}
+
+A.pageResults:hover {
+  color: #0000FF;
+  background: #FFFF33;
+}
+
+TD.pageHeading, DIV.pageHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2E3699;
+}
+
+TR.subBar {
+  background: #f4f7fd;
+}
+
+TD.subBar {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  color: #000000;
+}
+
+TD.main, P.main {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+TD.smallText, SPAN.smallText, P.smallText {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+TD.accountCategory {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  color: #aabbdd;
+}
+
+TD.fieldKey {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+TD.fieldValue {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+}
+
+TD.tableHeading {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+SPAN.newItemInCart {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+  color: #ff0000;
+}
+
+CHECKBOX, INPUT, RADIO, SELECT {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+TEXTAREA {
+  width: 100%;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 11px;
+}
+
+SPAN.greetUser {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #f0a480;
+  font-weight: bold;
+}
+
+TABLE.formArea {
+  background: #f1f9fe;
+  border-color: #7b9ebd;
+  border-style: solid;
+  border-width: 1px;
+}
+
+TD.formAreaTitle {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+SPAN.markProductOutOfStock {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  color: #c76170;
+  font-weight: bold;
+}
+
+SPAN.productSpecialPrice {
+  font-family: Verdana, Arial, sans-serif;
+  color: #ff0000;
+}
+
+SPAN.errorText {
+  font-family: Verdana, Arial, sans-serif;
+  color: #ff0000;
+}
+
+.moduleRow { }
+.moduleRowOver { background-color: #D7E9F7; cursor: pointer; cursor: hand; }
+.moduleRowSelected { background-color: #E9F4FC; }
+
+.checkoutBarFrom, .checkoutBarTo { font-family: Verdana, Arial, sans-serif; font-size: 11px; color: #8c8c8c; }
+.checkoutBarCurrent { font-family: Verdana, Arial, sans-serif; font-size: 11px; color: #000000; }
+
+/* message box */
+
+.messageBox { font-family: Verdana, Arial, sans-serif; font-size: 11px; }
+.messageStackError, .messageStackWarning { font-family: Verdana, Arial, sans-serif; font-size: 11px; background-color: #ffb3b5; }
+.messageStackSuccess { font-family: Verdana, Arial, sans-serif; font-size: 11px; background-color: #99ff00; }
+
+/* input requirement */
+
+.inputRequirement { font-family: Verdana, Arial, sans-serif; font-size: 11px; color: #ff0000; }
+
+
+
+.highslide {
+	cursor: url(http://www.mediseekers.com/highslide/graphics/zoomin.cur), pointer;
+    outline: none;
+}
+.highslide-active-anchor img {
+	visibility: hidden;
+}
+.highslide img {
+	border: 2px solid gray;
+}
+.highslide:hover img {
+	border: 2px solid white;
+}
+
+.highslide-wrapper {
+	background: white;
+}
+.highslide-image {
+    border: 2px solid white;
+}
+.highslide-image-blur {
+}
+.highslide-caption {
+    display: none;
+    
+    border: 2px solid white;
+    border-top: none;
+    font-family: Verdana, Helvetica;
+    font-size: 10pt;
+    padding: 5px;
+    background-color: white;
+}
+.highslide-loading {
+    display: block;
+	color: black;
+	font-size: 8pt;
+	font-family: sans-serif;
+	font-weight: bold;
+    text-decoration: none;
+	padding: 2px;
+	border: 1px solid black;
+    background-color: white;
+    
+    padding-left: 22px;
+    background-image: url(highslide/graphics/loader.white.gif);
+    background-repeat: no-repeat;
+    background-position: 3px 1px;
+}
+a.highslide-credits,
+a.highslide-credits i {
+    padding: 2px;
+    color: silver;
+    text-decoration: none;
+	font-size: 10px;
+}
+a.highslide-credits:hover,
+a.highslide-credits:hover i {
+    color: white;
+    background-color: gray;
+}
+
+.highslide-move {
+    cursor: move;
+}
+
+.highslide-overlay {
+	display: none;
+}
+
+a.highslide-full-expand {
+	background: url(highslide/graphics/fullexpand.gif) no-repeat;
+	display: block;
+	margin: 0 10px 10px 0;
+	width: 34px;
+	height: 34px;
+}
+
+
+/* Controlbar example */
+.controlbar {	
+	background: url(highslide/graphics/controlbar4.gif);
+	width: 167px;
+	height: 34px;
+}
+.controlbar a {	
+	display: block;
+	float: left;
+	/*margin: 0px 0 0 4px;*/	
+	height: 27px;
+}
+.controlbar a:hover {
+	background-image: url(highslide/graphics/controlbar4-hover.gif);
+}
+.controlbar .previous {
+	width: 50px;
+}
+.controlbar .next {
+	width: 40px;
+	background-position: -50px 0;
+}
+.controlbar .highslide-move {
+	width: 40px;
+	background-position: -90px 0;
+}
+.controlbar .close {
+	width: 36px;
+	background-position: -130px 0;
+}
+
+/* Styles for the popup */  
+.highslide-wrapper {  
+	background-color: white;  
+}  
+.highslide-wrapper .highslide-html-content {  
+    width: 600px;  
+	height: 450px;  
+    padding: 5px;  
+}  
+.highslide-wrapper .highslide-header div {  
+}  
+.highslide-wrapper .highslide-header ul {  
+	margin: 0;  
+	padding: 0;  
+	text-align: right;  
+}  
+.highslide-wrapper .highslide-header ul li {  
+	display: inline;  
+	padding-left: 1em;  
+}  
+.highslide-wrapper .highslide-header ul li.highslide-previous, .highslide-wrapper .highslide-header ul li.highslide-next {  
+	display: none;  
+}  
+.highslide-wrapper .highslide-header a {  
+	font-weight: bold;  
+	color: gray;  
+	text-transform: uppercase;  
+	text-decoration: none;  
+}  
+.highslide-wrapper .highslide-header a:hover {  
+	color: black;  
+}  
+.highslide-wrapper .highslide-header .highslide-move a {  
+	cursor: move;  
+}  
+.highslide-wrapper .highslide-footer {  
+	height: 11px;  
+}  
+.highslide-wrapper .highslide-footer .highslide-resize {  
+	float: right;  
+	height: 11px;  
+	width: 11px;  
+	background: url(highslide/graphics/resize.gif);  
+}  
+.highslide-wrapper .highslide-body {  
+}  
+.highslide-move {  
+    cursor: move;  
+}  
+.highslide-resize {  
+    cursor: nw-resize;  
+}  
+
+
+/* Necessary for functionality */
+.highslide-display-block {
+    display: block;
+}
+.highslide-display-none {
+    display: none;
+}
+
+.border_sides {
+  border-left: 1px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: #d1e0e7;
+  background-color: #ffffff;
+}
+
+.search_hos {
+  color: #000000;
+  text-decoration: none;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  border-left: 1px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: #d1e0e7;
+  height:25px;
+  width:100%;
+  background-color: #ffffff;
+}
+
+.border_bottom {
+  border-bottom: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: #d1e0e7;
+  background-color: #ffffff;
+}
+/*  Rating swcript */
+/* First we style the ordered list */
+ol.rating {
+	list-style-type:none;
+	font-size:16px;
+	margin:0.5em;
+	padding:0;
+	width:6.3em;
+	padding-botom:1.2em;
+}
+/* generic styles for all rating objects - Defaults to a star*/
+ol.rating li {
+	float:left;
+	height:1em;
+	margin:0.1em;
+	overflow:hidden;
+	background-image:url(http://www.mediseekers.com/images/FFrstar.png);
+}
+/* Styles for each rating object */
+ol.med li {
+	background-image:url(http://www.mediseekers.com/images/FFrmed.png);
+}
+ol.ast li {
+	background-image:url(http://www.mediseekers.com/images/FFrast.png);
+}
+/* Create the hover styles */
+ol.rating:hover li {
+	background-position:50% -16px;
+}
+/* style the link to move the text out of the way */
+ol li a {
+	display:block;
+	width:1em;
+	height:1em;
+	padding-top:1.2em;
+	text-decoration:none;
+}
+/* Style the hover states to move the rest of the images to the greyed out state */
+ol.rating li:hover + li, ol.rating li:hover + li + li, ol.rating li:hover + li + li + li , ol.rating li:hover + li + li +li +li{
+	background-position:50% -32px;
+}
+/* Style the items in ratings with preset values */
+ol.one li, ol.two li, ol.two li , ol.three li, ol.four li, ol.five li {
+	background-position:50% -16px;
+}
+/* and remove the rating styling from the rest of the items */
+ol.one li + li, ol.two li + li + li, ol.three li + li + li + li, ol.four li + li + li + li + li {
+	background-position:50% 0;
+}
+
+/* Skype Box at the header */
+.txt-name-top div#phone-numbers,
+div#skype-details {
+	width: 320px;
+	float: right;
+	text-align: center;
+}
+.txt-name-top div#phone-numbers {
+        width: 360px;
+        text-align: right;
+        margin-left: -180px;
+        font-size: 16px;
+        position: absolute;
+        top: 23px;
+}
+.txt-name-top div#phone-numbers select {
+        width: 360px;
+}
+div#skype-details div#skype-status {
+	float: right;
+	padding: 15px 10px 0 0 ;
+}
+div#skype-details p {
+	margin: 0;
+	padding: 0;
+	/*width: 109px;*/
+	width: 100%;
+	background: transparent url(images/skype-logo-small.png) bottom right no-repeat;
+	text-indent: -3000px;
+	height: 49px;
+	display:block;
+}
+div#skype-details dl {
+	display: block;
+	width:230px;
+	height:43px;
+	background: transparent url(images/skype-name.png) top left no-repeat;
+	text-indent: -3000px;
+	margin: 0 auto;
+	text-align: center;
+}
+div#skype-details dl dt {
+	line-height: 1.2em;
+	color: #666;
+}
+div#skype-details dl dd {
+	/*margin: -1.2em 0;*/
+	float:right;
+}
+
+/*
+ *New Style Content Rules
+ */
+div.new_style_content h2 {
+	font-size: 2em;
+	color: #009FD3; /* light blue */
+	/*color: #666CB4;*/ /* dark blue */
+	margin-bottom: 25px;
+}
+div.new_style_content p.important {
+	color:#FF4A4A;
+}
+
+/*
+ *How to book page
+ */
+.new_style_content#how-to-book a#click-here,
+.new_style_content#how-to-book h3,
+.new_style_content#how-to-book h2#how-to-book {
+	text-indent: -3000px;
+	display: block;
+	text-align: center;
+}
+.new_style_content#how-to-book a#click-here {
+	background: transparent url(images/how-to-book/its-simple.png) top left no-repeat;
+	width: 550px;
+	height: 40px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+.new_style_content#how-to-book h3{
+	width: 336px;
+	height: 40px;
+}
+.new_style_content#how-to-book h3#step-one{
+	background: transparent url(images/how-to-book/book-your-treatments.png) top left no-repeat;
+}
+.new_style_content#how-to-book h3#step-two{
+	background: transparent url(images/how-to-book/book-your-flights.png) top left no-repeat;
+}
+.new_style_content#how-to-book h3#step-three{
+	background: transparent url(images/how-to-book/book-your-hotel.png) top left no-repeat;
+}
+.new_style_content#how-to-book h2#how-to-book {
+	margin: 0 auto 25px auto;
+	width: 584px;
+	height: 40px;
+	background: transparent url(images/how-to-book/how-to-book-rounded.png) top left no-repeat;
+	text-align: center;
+}
+
+div#sidebar-steps {
+    /* background-color: #F0F0FF; */
+    width: 280px;
+	margin: 0 0 25px 0;
+    /*padding: 0 5px 5px 5px;*/
+    padding: 0;
+    border: 1px solid #05B0F0;
+    -moz-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+div#sidebar-steps h3 {
+	font-family: Verdana, Arial, sans-serif;
+	color: #7479BB;
+	text-align: center;
+	padding: 0;
+	margin: 10px 0 0 0;
+	font-size: 1.1em;
+}
+#sidebar-steps h3#step-one,
+#sidebar-steps h3#step-two,
+#sidebar-steps h3#step-three{
+	text-indent: -3000px;
+	display: block;
+	text-align: center;
+	width: 271px;
+	height: 40px;
+}
+#sidebar-steps h3#step-one{
+	margin-bottom: 10px;
+	background: transparent url(images/sidebar-steps/book-your-treatments.png) top left no-repeat;
+}
+#sidebar-steps h3#step-two{
+	background: transparent url(images/sidebar-steps/book-your-flights.png) top left no-repeat;
+}
+#sidebar-steps h3#step-three{
+	background: transparent url(images/sidebar-steps/book-your-hotel.png) top left no-repeat;
+}
+
+div#sidebar-steps #insurance, 
+div#sidebar-steps #agoda_searchbox {
+	margin: 10px 0 25px 0;
+}
+div#sidebar-steps p {
+	padding: 0;
+	margin: 0;
+}
+
+/* Top sidebar with the
+ * Google Translate box etc.
+ */
+div#top_left_sidebar {
+	position: absolute;
+	top: 0;
+	left:50%;
+	margin: 0 0 0 460px;
+} 
+
+/*
+ *Testimonials Page
+ */
+.new_style_content .quote {
+	width: 500px;
+	margin: 0 auto;
+	text-align: left;
+display: block;
+}
+
+.new_style_content .author {
+	text-align: right;
+	margin-bottom: 25px;
+	margin-right: 50px;
+	color: #009FD3;
+}
+
+/*
+ *Surgeons Page
+ */
+
+.new_style_content .clear {
+	clear: both;
+}
+.new_style_content .surgeons {
+	clear: both;
+	padding: 0 0 25px 0;
+}
+.new_style_content .surgeons#yanhee table {
+	font-size: 90%;
+	width: 580px;
+	margin: 0 auto 25px;
+	display: block;
+}
+.new_style_content .surgeons#yanhee table p {
+	margin: 5px 0;
+}
+.new_style_content .surgeons#yanhee .list-header {
+	font-weight: bold;
+	margin: 0 0 15px 0;
+
+}
+
+.new_style_content .surgeons#bangkok div.img-found {
+	float: left;
+	width: 150px;
+}
+.new_style_content .surgeons#bangkok table.profile {
+	float: right;
+}
+
+/*
+ *JFeed (MEdical News)
+ */
+.new_style_content .jfeed p.feed-description {
+	color: #999;
+	font-size: 90%;
+}
+.new_style_content .jfeed h3.feed-title {
+	color: #999;
+	font-size: 1em;
+}
+.new_style_content .jfeed h4 a {
+	font-size: 1.2em;
+}
+
+#home-page-welcome-text p {
+    margin: 15px 0;
+    font-size: 10pt;
+    line-height: 1.5em;
+
+}
+#home-page-welcome-text p em {
+    font-style: normal;
+    color: #1A2695;
+}
+#link-examples textarea {
+        width: auto;
+}
+#link-examples img {
+        border: none;
+}
